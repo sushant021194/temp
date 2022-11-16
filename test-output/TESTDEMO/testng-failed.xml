@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [TESTDEMO]"
+	parallel="methods">
+	<listeners>
+		<listener class-name="Codebase.root.WebDriverListener" />
+	</listeners>
+	<test thread-count="1" name="CommandPortal_Chrome(failed)"
+		parallel="methods">
+		<parameter name="ModuleName" value="CommandPortal" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="ExecutionURL" value="URL" />
+		<parameter name="ExecutionOn" value="127.0.0.1" />
+		<classes>
+			<class
+				name="Codebase.Modules.CommandPortal.TestScript.TC_Verify_SadPath_User_Is_Able_AddParameter_CommandParameter">
+				<methods>
+					<include name="test" invocation-numbers="0" />
+				</methods>
+			</class> <!-- Codebase.Modules.CommandPortal.TestScript.TC_Verify_SadPath_User_Is_Able_AddParameter_CommandParameter -->
+		</classes>
+	</test> <!-- CommandPortal_Chrome(failed) -->
+</suite> <!-- Failed suite [TESTDEMO] -->

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-10T11:03:50 CET" name="TESTDEMO" finished-at="2022-11-10T11:04:00 CET" duration-ms="9664">
+    <groups>
+    </groups>
+    <test started-at="2022-11-10T11:03:50 CET" name="AtosDemo_Chrome" finished-at="2022-11-10T11:04:00 CET" duration-ms="9664">
+      <class name="Codebase.Modules.AtosDemo.TestScript.TC_Verify_User_Is_Able_To_Create_Leave_Request">
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Codebase.Modules.AtosDemo.TestScript.TC_Verify_User_Is_Able_To_Create_Leave_Request@140b5b07]" started-at="2022-11-10T11:03:50 CET" name="test" finished-at="2022-11-10T11:03:59 CET" duration-ms="9292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AtosDemo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.myatos.net]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- Codebase.Modules.AtosDemo.TestScript.TC_Verify_User_Is_Able_To_Create_Leave_Request -->
+    </test> <!-- AtosDemo_Chrome -->
+  </suite> <!-- TESTDEMO -->
+</testng-results>

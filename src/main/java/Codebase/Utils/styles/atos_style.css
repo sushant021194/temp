@@ -1,0 +1,190 @@
+/*** central column on page ***/
+div#divContainer {
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: Calibri;
+	padding: 0.5em 1em 1em 1em;
+	/* rounded corners */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/* add gradient */
+	/*           
+            background-color: #FFFFFF;
+            background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#808080));
+            background: -moz-linear-gradient(top, #606060, #808080);
+*/
+	/* add box shadows */
+	-moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	color: #0066A2;
+	font-size: 1.5em;
+}
+
+table.formatHeader {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table.formatHeader td#left {
+	float: left;
+	width: 100%;
+	word-break: break-all;
+	/*	        width: 300px;
+	        white-space:nowrap*/
+}
+
+table.formatHeader td#right {
+	float: right;
+	width: 100px;
+}
+
+table.formatHeader td#left1 {
+	float: left;
+	width: 100px;
+}
+
+/*** sample table to demonstrate CSS3 formatting ***/
+table.formatHTML5 {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+	color: #606060;
+}
+
+/*** table's thead section, head row style ***/
+table.formatHTML5 thead tr td {
+	background-color: White;
+	vertical-align: middle;
+	padding: 0.6em;
+	font-size: 0.8em;
+}
+
+/*** table's thead section, coulmns header style ***/
+table.formatHTML5 thead tr th {
+	padding: 0.5em;
+	/* add gradient */
+	background-color: #474747;
+	background: -webkit-gradient(linear, left top, left bottom, from(#474747),
+		to(#606060));
+	background: linear-gradient(top, #474747, #606060);
+	background: -moz-linear-gradient(top, #474747, #606060);
+	color: #dadada;
+}
+
+/*Summary Report*/
+table.formatHTML4 {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+	color: #606060;
+}
+
+table.formatHTML4 td.tsheader {
+	padding: 0.5em;
+	/* add gradient */
+	background-color: #474747;
+	background: -webkit-gradient(linear, left top, left bottom, from(#474747),
+		to(#606060));
+	background: linear-gradient(top, #474747, #606060);
+	background: -moz-linear-gradient(top, #474747, #606060);
+	color: #dadada;
+}
+
+table.formatHTML4 td.pfhead {
+	background-color: White;
+	vertical-align: middle;
+	padding: 0.6em;
+	font-size: 0.8em;
+}
+
+table.formatHTML4 td.pfind {
+	background-color: White;
+	vertical-align: middle;
+	padding: 0.6em;
+	font-size: 0.8em;
+}
+
+/*** table's tbody section, odd rows style ***/
+table.formatHTML5 tbody tr:nth-child(odd) {
+	background-color: #fafafa;
+}
+
+/*** hover effect to table's tbody odd rows ***/
+table.formatHTML5 tbody tr:nth-child(odd):hover {
+	cursor: pointer;
+	/* add gradient */
+	background-color: #909090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#909090),
+		to(#A6A6A6));
+	background: linear-gradient(top, #909090, #A6A6A6);
+	background: -moz-linear-gradient(top, #909090, #A6A6A6);
+	color: #dadada;
+}
+
+/*** table's tbody section, even rows style ***/
+table.formatHTML5 tbody tr:nth-child(even) {
+	background-color: #efefef;
+}
+
+/*** hover effect to apply to table's tbody section, even rows ***/
+table.formatHTML5 tbody tr:nth-child(even):hover {
+	cursor: pointer;
+	/* add gradient */
+	background-color: #909090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#909090),
+		to(#A6A6A6));
+	background: linear-gradient(top, #909090, #A6A6A6);
+	background: -moz-linear-gradient(top, #909090, #A6A6A6);
+	color: #dadada;
+}
+
+/*** table's tbody section, last row style ***/
+table.formatHTML5 tbody tr:last-child {
+	border-bottom: solid 1px #404040;
+}
+
+/*** table's tbody section, separator row pseudo-class ***/
+table.formatHTML5 tbody tr.separator {
+	/* add gradient */
+	background-color: #808080;
+	background: -webkit-gradient(linear, left top, left bottom, from(#606060),
+		to(#909090));
+	background: linear-gradient(top, #606060, #909090);
+	background: -moz-linear-gradient(top, #606060, #909090);
+	color: #dadada;
+}
+
+/*** table's td element, all section ***/
+table.formatHTML5 td {
+	vertical-align: middle;
+	padding: 0.5em;
+}
+
+/*** table's tfoot section ***/
+table.formatHTML5 tfoot {
+	text-align: center;
+	color: #303030;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+	font-size: 0.7em;
+}
+/***break long words in columns***/
+
+/*table.formatHTML5 tbody tr td:nth-child(5),td:nth-child(6)
+	{
+		width:5%;
+	}*/
+table.formatHTML5 tbody tr td:nth-child(2), td:nth-child(3) {
+	width: 25%;
+	word-break: break-all;
+}
+
+table.formatHTML5 tbody tr td:nth-child(4) {
+	width: 30%;
+	word-break: break-all;
+}

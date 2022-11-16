@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html>
+<head>
+<meta charset="utf-8">
+<title>Test Summary</title>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<link rel="stylesheet" type="text/css" href="./styles/atos_indexstyle.css">
+<script type="text/javascript" src="./styles/jquery.js"></script>
+<script type="text/javascript" src="./styles/jquery.dataTables.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("visualization", "1", {packages:["corechart"]});google.setOnLoadCallback(drawChart);function drawChart() {var data = google.visualization.arrayToDataTable([['Status','Scripts'],['Pass',0],['Fail',1],['Warning',0]]);var options = {title:'Overall Automation Execution Status %',slices: {0: {color: 'green'}, 1:{color: 'red'}}};var chart = new google.visualization.PieChart(document.getElementById('chart_div'));chart.draw(data, options);google.visualization.events.addListener(chart, 'select', FetchSpecificRows);function FetchSpecificRows(){var selection = chart.getSelection();var item = selection[0];var test = document.getElementsByTagName("INPUT")[0];test.setAttribute("name", "filt");if(item.row==0){test.value ="Pass";}if(item.row==1){test.value = "Fail";}if(item.row==2){test.value ="Warning";}chart.setSelection([]);test.focus();var keyupevent=document.createEvent("MouseEvents");keyupevent.initEvent("keyup", true, true);test.dispatchEvent(keyupevent);}}$(document).ready( function () { $('#table1').dataTable();} );</script><script type="text/javascript">google.load("visualization", "1", {packages:["corechart"]});google.setOnLoadCallback(drawChart);function drawChart() {var data = google.visualization.arrayToDataTable([['Modules', 'Total TC', 'Pass TC','Fail TC'],['AtosDemo',1,0,1]]);var options = {title: 'Performance',series: [{color: '#3366CC', visibleInLegend: true}, {color: 'green', visibleInLegend:true}, {color: 'red', visibleInLegend:true}]};var chart = new google.visualization.ColumnChart(document.getElementById('barchart_div'));chart.draw(data, options);};document.write(txt);</script>
+</head>
+<body>
+<div id="divContainer">
+<table  class="formatHeader">
+<tr><td colspan="4" id="left1">
+<figure><img src="./Images/SFDC_Dashboard.png"></figure></td>
+
+<td colspan="4" id="right">
+<figure><img src="./Images/Logo_RGB_Small.jpg"></figure></td></tr>
+<script>var txt='<tr><td colspan="4" id="center"><h1>Test Automation Summary Report</h1></td></tr><tr><td colspan="4" id="center2">As on: Fri Oct 28 11:56:00 CEST 2022</td></tr></table>'; document.write(txt);</script>
+<script>var txt='<br><table><tr><td colspan="4" id="left1"><div id="chart_div" style="width: 500px; height: 250px ; position:center "></div></td><br><td colspan="4" id="right"><div id="barchart_div" style="width: 500px; height: 250px ; position:center "></div></td></tr></table><br><table id="table1" class="formatHTML5"><thead><tr><th>Test_Case</th></th><th>Module</th><th>Description</th><th>Steps</th><th>Passed</th><th>Failed</th><th>Warnings</th><th>Status</th></tr></thead><tbody> '; document.write(txt);</script>
+<script>var txt='<tr><td><a href="./AtosDemo/TC_Verify_User_Is_Able_To_Create_Leave_Request_ChromeAtosDemo.html">TC_Verify_User_Is_Able_To_Create_Leave_Request_Chrome</a></td><td>AtosDemo</td><td>Create Leave</td><td>1</td><td>0</td><td>1</td><td>0</td><td><b><font size = 2 color = red>FAIL</td></tr> '; document.write(txt);</script>
+
+<script>var txt='</table><br><br><table class="formatHTML4" width=900px align=center><tr><td width=650px></td><td colspan=2 class=tsheader>Execution Time</td></tr><tr><td width=650px></td><td class=pfhead width=120px>Start Time</td><td class=pfind width=130px>28/10/2022 11:55:56</td></tr><tr><td width=650px></td><td class=pfhead width=120px>End Time</td><td class=pfind width=130px>28/10/2022 11:56:10</td></tr><tr><td width=650px></td><td class=pfhead width=120px>Duration</td><td class=pfind width=130px>14.0 secs</td></tr></table>'; document.write(txt);</script>
+<script>var txt='<tfoot><tr><td colspan="8">For internal use. &copy; Atos S.E. 2017 all rights reserved.</td></tr></tfoot> </table></div></body></html>'; document.write(txt);</script>
